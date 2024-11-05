@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    
+<div class="wrapper">
+    <h1 class="head">Weather App</h1>
+    <div class="tab-container">
+        <p class="tab" your-weather>Your Weather</p>
+        <p class="tab" Search-weather>Search Weather</p>
+    </div>
+   <div class="container">
+    <div class="grant-location-contai">
+        <img src="./assets/location.png" alt="" height="100px" width="100px" loading="lazy">
+        <p>Grant Location Acess</p>
+        <p>Allow Access to get weather Information</p>
+        <button grant-access> grant access</button>
+    </div>
+  
+
+    <!-- search form -->
+    <form  formcontainer id="formpage"> 
+        <input type="text" placeholder="Search for City..." search-Input class="form">
+       <button  type="submit" search-btn class="search-button">
+        <img src="./assets/search.png" height="30px" width="30px">
+       </button>
+    </form>
+      <!-- loading -->
+      <div loading class="loadingimg">
+        <img src="./assets/loading.gif" loading="lazy" width="140px" height="140px">
+        <p>Loading</p>
+    </div>
+</div>
+    <!-- information container -->
+    <div information-container class="info-container">
+
+       <div class="city">
+        <p city-name></p>
+        <img flag>
+       </div>
+       <p description class="descript"></p>
+       <img weather-img class="w-img">
+       <p temp class="temeperature"></p>
+
+       <!-- card container -->
+       <div class="card-cont">
+
+        <!-- card 1 -->
+        <div class="card">
+            <img src="./assets/wind.png" alt="">
+            <p>Windspeed</p>
+            <p wind></p>
+        </div>
+        <div class="card">
+            <img src="./assets/humidity.png" alt="">
+            <p>Humidity</p>
+            <p humidity></p>
+        </div>
+        <div class="card">
+            <img src="./assets/cloud.png" alt="">
+            <p>Clouds</p>
+            <p clouds></p>
+        </div>
+       </div>
+    </div>
+
+    <!-- error section -->
+    <div class="error-sec">
+        <img src="./assets/not-found.png" loading="lazy" >
+        <p>City Not Found...</p>
+    </div>
+
+  
+</div>
+    <script src="weather.js"></script>
+</body>
+</html>
